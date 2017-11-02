@@ -28,6 +28,14 @@
 	{
 		if( defined('OPTINPANDA_PLUGIN_ACTIVE') || defined('SOCIALLOCKER_PLUGIN_ACTIVE') ) {
 
+			//todo: We eliminate compatibility problems with plugins that have an old factory.
+			$sl_bizpanda_ver_old = defined('SOCIALLOCKER_BIZPANDA_VERSION') && SOCIALLOCKER_BIZPANDA_VERSION < 126;
+			$op_bizpanda_ver_old = defined('OPTINPANDA_BIZPANDA_VERSION') && OPTINPANDA_BIZPANDA_VERSION < 126;
+
+			if( $sl_bizpanda_ver_old || $op_bizpanda_ver_old ) {
+				return;
+			}
+
 			global $bizpanda, $bizpanda_export_addon;
 
 			load_textdomain('bizpanda-export-addon', BZDA_EXPORT_ADN_PLUGIN_DIR . '/langs/' . get_locale() . '.mo');
@@ -72,6 +80,15 @@
 	function onp_bzda_export_adn_activation()
 	{
 		if( defined('OPTINPANDA_PLUGIN_ACTIVE') || defined('SOCIALLOCKER_PLUGIN_ACTIVE') ) {
+
+			//todo: We eliminate compatibility problems with plugins that have an old factory.
+			$sl_bizpanda_ver_old = defined('SOCIALLOCKER_BIZPANDA_VERSION') && SOCIALLOCKER_BIZPANDA_VERSION < 126;
+			$op_bizpanda_ver_old = defined('OPTINPANDA_BIZPANDA_VERSION') && OPTINPANDA_BIZPANDA_VERSION < 126;
+
+			if( $sl_bizpanda_ver_old || $op_bizpanda_ver_old ) {
+				return;
+			}
+
 			onp_bzda_export_adn_init();
 
 			global $bizpanda_export_addon;

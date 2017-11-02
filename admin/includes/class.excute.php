@@ -192,7 +192,7 @@
 
 			return true;
 		}
-		
+
 		public function filterLockersList($value)
 		{
 			$value = intval($value);
