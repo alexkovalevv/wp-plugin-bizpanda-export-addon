@@ -12,6 +12,7 @@
 
 		private $leads = array();
 
+
 		public function getLeads()
 		{
 			global $wpdb;
@@ -32,7 +33,9 @@
 				$selected_custom_fields[] = $custom_field;
 			}
 
-			$lockers = $this->getValue('lockers');
+			$lockers_string = $this->getValue('lockers');
+			$lockers_array = array_filter(explode(',', $lockers_string), array($this, 'filterLockersList'));
+			$lockers = implode(',', $lockers_array);
 
 			$fields_str = $this->getValue('fields', array());
 			$fields_array = explode(',', $fields_str);
@@ -188,5 +191,12 @@
 			//exit;
 
 			return true;
+		}
+		
+		public function filterLockersList($value)
+		{
+			$value = intval($value);
+
+			return !empty($value);
 		}
 	}

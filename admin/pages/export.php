@@ -131,7 +131,7 @@
 
 							<div class="bizpanda-export-buttons">
 								<a href="<?php $this->actionUrl('export', array('export_type' => 'leads')) ?>" class="button button-large bizpanda-export-start">
-									<i class="fa fa-plus"></i> <span>Start export</span>
+									<i class="fa fa-plus"></i> <span>Create new task</span>
 								</a>
 							</div>
 						</div>
@@ -416,6 +416,13 @@
 			}
 			ob_start();
 			?>
+			<script>
+				jQuery(function() {
+					jQuery('#factory-checklist-bizpanda_lockers-all').click(function() {
+						jQuery('input[name="bizpanda_lockers[]"]').prop('checked', true);
+					});
+				});
+			</script>
 			<form method="post" class="form-horizontal">
 				<?php $form->html(); ?>
 
@@ -515,7 +522,7 @@
 
 				$wpdb->delete($wpdb->prefix . 'opanda_export_logs', array('task_id' => $task_id), array('%d'));
 			}
-			
+
 			$this->redirectToAction('index', array('bzda_success_remove' => 1));
 		}
 

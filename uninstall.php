@@ -8,5 +8,5 @@
 	// remove plugin options
 	global $wpdb;
 
-	$wpdb->query("DROP TABLE {$wpdb->prefix}{$wpdb->prefix}opanda_export;");
-	$wpdb->query("DROP TABLE {$wpdb->prefix}{$wpdb->prefix}opanda_export_logs;");
+	$wpdb->query("DROP TABLE {$wpdb->prefix}opanda_export;");
+	$wpdb->query("DROP TABLE {$wpdb->prefix}opanda_export_logs;");
