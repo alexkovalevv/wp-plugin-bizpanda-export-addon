@@ -1,0 +1,134 @@
+/**
+ * Export page styles
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 29.10.2017 
+ */
+
+#bizpanda-export-page {
+  .column-primary {
+    width: 30px;
+  }
+
+  .column-autoexport, .column-download {
+    width: 100px;
+  }
+
+  .column-action, .column-date {
+    width: 200px;
+  }
+
+  .column-summary {
+    width: 300px;
+  }
+
+  #the-list {
+    td {
+      line-height: 3;
+    }
+    td.column-name {
+      line-height: normal;
+    }
+  }
+
+  .bizpanda-table-circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+    &.green {
+      background-color: #229922;
+    }
+    &.grey {
+      background-color: #9e9e9e;
+    }
+  }
+
+  #bizpanda_task_shedule_time {
+    width: 200px;
+  }
+
+  .bizpanda-export-run-button {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .bizpanda-export-items {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+
+    .bizpanda-export-item {
+      width: 250px;
+      min-width: 0;
+      height: 250px;
+      padding: 20px;
+      margin: 0 15px 15px 0;
+      vertical-align: top;
+      float: left;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      line-height: 150%;
+      position: relative;
+    }
+
+    .bizpanda-export-buttons {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 18px;
+      background-color: #f9f9f9;
+      height: 66px;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+
+  .bizpanda-export-save-task-screen {
+
+    .bizpanda-details-contanier {
+      padding: 20px;
+      background: #eaeaea;
+    }
+    .bizpanda-next-buttons {
+      margin-top: 20px;
+      .bizpanda-next-run-button {
+        background-color: #8BC34A;
+        border-color: #9ba78d;
+        color: #fff;
+      }
+      .bizpanda-come-back-button {
+        background-color: #e0e0e0;
+        border-color: #cecece;
+        color: #8c8c8c;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        height: 46px;
+        line-height: 44px;
+        padding: 0 36px;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        -webkit-appearance: none;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        &, &:active, &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

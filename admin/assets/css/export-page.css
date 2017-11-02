@@ -1,0 +1,117 @@
+/**
+ * Export page styles
+ * @author Alex Kovalev <alex.kovalevv@gmail.com> 
+ * @copyright Alex Kovalev 29.10.2017 
+ */
+#bizpanda-export-page .column-primary {
+  width: 30px;
+}
+#bizpanda-export-page .column-autoexport,
+#bizpanda-export-page .column-download {
+  width: 100px;
+}
+#bizpanda-export-page .column-action,
+#bizpanda-export-page .column-date {
+  width: 200px;
+}
+#bizpanda-export-page .column-summary {
+  width: 300px;
+}
+#bizpanda-export-page #the-list td {
+  line-height: 3;
+}
+#bizpanda-export-page #the-list td.column-name {
+  line-height: normal;
+}
+#bizpanda-export-page .bizpanda-table-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+#bizpanda-export-page .bizpanda-table-circle.green {
+  background-color: #229922;
+}
+#bizpanda-export-page .bizpanda-table-circle.grey {
+  background-color: #9e9e9e;
+}
+#bizpanda-export-page #bizpanda_task_shedule_time {
+  width: 200px;
+}
+#bizpanda-export-page .bizpanda-export-run-button {
+  display: inline-block;
+  margin-top: 10px;
+}
+#bizpanda-export-page .bizpanda-export-items {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+#bizpanda-export-page .bizpanda-export-items .bizpanda-export-item {
+  width: 250px;
+  min-width: 0;
+  height: 250px;
+  padding: 20px;
+  margin: 0 15px 15px 0;
+  vertical-align: top;
+  float: left;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 150%;
+  position: relative;
+}
+#bizpanda-export-page .bizpanda-export-items .bizpanda-export-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px;
+  background-color: #f9f9f9;
+  height: 66px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-details-contanier {
+  padding: 20px;
+  background: #eaeaea;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons {
+  margin-top: 20px;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons .bizpanda-next-run-button {
+  background-color: #8BC34A;
+  border-color: #9ba78d;
+  color: #fff;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons .bizpanda-come-back-button {
+  background-color: #e0e0e0;
+  border-color: #cecece;
+  color: #8c8c8c;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  height: 46px;
+  line-height: 44px;
+  padding: 0 36px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons a,
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons a:active,
+#bizpanda-export-page .bizpanda-export-save-task-screen .bizpanda-next-buttons a:focus {
+  outline: none;
+  box-shadow: none;
+}
