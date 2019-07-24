@@ -3,8 +3,7 @@
 	* Plugin Name: [Bizpanda addon] All Export
 	* Description: Export leads from the Optin panda plugin, using the Wp all import plugin.
 	* Version: 1.0.0
-	* Author: Webcraftic <wordpress.webraftic@gmail.com>
-	* Author URI: https://profiles.wordpress.org/webcraftic
+	* Author: Alex Kovalev <alex.kovalevv@gmail.com>
 	*/
 
 	define('BZDA_EXPORT_ADN_INIT', true);
